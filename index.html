@@ -12,9 +12,9 @@
         <div class="nav-left">
             <img src="image/logo.png" class="logo">
             <ul>
-                <li><img src="image/2bell.png"></li>
-                <li><img src="image/inbox2.png"></li>
-                <li><img src="image/video icon.png"></li>
+                <li><img src="image/bell.png"></li>
+                <li><img src="image/box.png"></li>
+                <li><img src="image/vid.png"></li>
             </ul>
         </div>
         <div class="nav-right">
@@ -23,21 +23,28 @@
                 <img src="image/search.png">
                 <input type="text" placeholder="Search">
             </div>
-            <div class="nav-user-icon online">
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
                 <img src="image/user.jpg" >
             </div>
 
         </div>
                     <!-------- settings-menu---------- -->
         <div class="settings-menu">
+
+        <div id="dark-btn" >
+            <span></span>
+        </div>
+
+
             <div class="settings-menu-inner">
                 <div class="user-profile">
-                    <img src="image/userprofile.jpg">
+                    <img src="image/user.jpg" height="45px">
                     <div>
                         <p>ika lukava</p>
                         <a href="#">See Your Profile</a>          
                     </div>
                 </div>
+                <hr>
                 <div class="user-profile">
                     <img src="image/feedback.webp">
                     <div>
@@ -45,11 +52,26 @@
                         <a href="#">Help us to improve the new design</a>          
                     </div>
                 </div>
+                <hr>
+
+                <div class="settings-links">
+                    <img src="image/settings" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="image/arrow" width="20px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="image/help.jpg" class="settings-icon">
+                    <a href="#">Help & Support <img src="image/arrow" width="20px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="image/display.png" class="settings-icon">
+                    <a href="#">Display & Accessinility <img src="image/arrow" width="20px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="image/log.png" class="settings-icon">
+                    <a href="#">Logout <img src="image/arrow"   width="20px"></a>
+                </div>
             </div>
         </div>
-
-
-
     </nav>
 
 
@@ -60,7 +82,7 @@
                 <a href="#"><img src="image/news.jpg">Latest News</a>
                 <a href="#"><img src="image/friends.png">Friends</a>
                 <a href="#"><img src="image/group.png">Group</a>
-                <a href="#"><img src="image/market.png">Marketplace</a>
+                <a href="#"><img src="image/shop.png">Marketplace</a>
                 <a href="#"><img src="image/watch.png">Watch</a>
                 <a href="#">See More</a>
             </div> 
@@ -72,6 +94,7 @@
                 <a href="#"><img src="image/website experts.png">Website Experts</a>
              </div>
         </div>
+
         <!------------- main-content---------- -->
         <div class="main-content">
             <div class="story-gallery">
@@ -96,7 +119,7 @@
                     <p>Barbare Mkheidze</p>
                 </div>
             </div>
-
+            <!------------ post----------- -->
             <div class="write-post-container">
                 <div class="user-profile">
                     <img src="image/userprofile.jpg">
@@ -172,7 +195,6 @@
                         </div>
                         <div class="post-profile-icone">
                             <img src="image/user.jpg"> <i class="fas fa-caret-down"></i>
-
                         </div>
                     </div>
             </div>
@@ -350,7 +372,7 @@
         <p>Copyright 2021 - facebook page</p>
     </div>
 
-
+    <script src="app.js"></script>
 
 </body>
 </html>
